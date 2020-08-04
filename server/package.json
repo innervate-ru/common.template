@@ -1,0 +1,54 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node scripts/babel.js src/index.js",
+    "build": "node scripts/babel.js scripts/build.js",
+    "dev": "node scripts/babel.js scripts/build.js --dev"
+  },
+  "devDependencies": {
+    "ava": "^3.11.1",
+    "chokidar": "^3.4.1",
+    "commander": "^6.0.0",
+    "copy": "^0.3.2",
+    "cross-env": "^7.0.2",
+    "glob": "^7.1.6",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2"
+  },
+  "ava": {
+    "concurrency": 5,
+    "failFast": true,
+    "failWithoutAssertions": false,
+    "tap": false,
+    "powerAssert": false,
+    "require": [
+      "@babel/register",
+      "@babel/polyfill"
+    ]
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "apollo-server-express": "^2.16.1",
+    "circular-json": "^0.5.9",
+    "config": "^3.3.1",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "gelf-pro": "^1.3.3",
+    "graphql": "^15.3.0",
+    "graphql-iso-date": "^3.6.1",
+    "graphql-tools": "^6.0.15",
+    "graphql-type-json": "^0.3.2",
+    "iso8601-validator": "^1.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.19",
+    "moment": "^2.27.0",
+    "moment-duration-format": "^2.3.2",
+    "nanoid": "^3.1.12"
+  }
+}

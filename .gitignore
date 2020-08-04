@@ -1,0 +1,14 @@
+.env
+.sass-cache
+.svn
+.idea
+*.iml
+*.ipr
+trace
+temp
+node_modules
+ncp-debug.*
+npm-debug.*
+out.txt
+yarn.lock
+.DS_Store

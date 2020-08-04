@@ -1,0 +1,3 @@
+[submodule "server/src/common"]
+	path = server/src/common
+	url = https://github.com/innervate-ru/common.git
